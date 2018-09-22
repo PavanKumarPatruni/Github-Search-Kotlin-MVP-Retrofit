@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/editTextSearch"
+        android:layout_width="@dimen/sizeZero"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/sizeEight"
+        android:background="@drawable/drawable_edit_text_background"
+        android:ems="10"
+        android:hint="@string/search"
+        android:inputType="textPersonName"
+        android:paddingLeft="@dimen/sizeSixteen"
+        android:paddingTop="@dimen/sizeTen"
+        android:paddingRight="@dimen/sizeSixteen"
+        android:paddingBottom="@dimen/sizeTen"
+        android:textSize="@dimen/sizeSixteenSP"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewFilters"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewSearch"
+        android:layout_width="@dimen/sizeForty"
+        android:layout_height="@dimen/sizeForty"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="@dimen/sizeEight"
+        android:layout_marginEnd="@dimen/sizeTwo"
+        android:layout_marginRight="@dimen/sizeTwo"
+        android:background="@drawable/drawable_search_background"
+        android:padding="@dimen/sizeEight"
+        app:layout_constraintEnd_toEndOf="@+id/editTextSearch"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_search" />
+
+    <ImageView
+        android:id="@+id/imageViewFilters"
+        android:layout_width="@dimen/sizeForty"
+        android:layout_height="@dimen/sizeForty"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="@dimen/sizeEight"
+        android:background="@drawable/drawable_filter_background"
+        android:padding="@dimen/sizeEight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_filter" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="@dimen/sizeZero"
+        android:layout_height="@dimen/sizeZero"
+        android:layout_marginTop="@dimen/sizeEight"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSearch" />
+
+    <TextView
+        android:id="@+id/textViewMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/search_repos"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:textColor="@color/colorAccent"
+        android:textStyle="italic"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSearch" />
+
+</android.support.constraint.ConstraintLayout>

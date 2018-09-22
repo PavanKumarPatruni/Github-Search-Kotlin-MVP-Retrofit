@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">GitHub App</string>
+    <string name="search">Search</string>
+    <string name="search_repos">Search Git Repos</string>
+    <string name="no_repo_found">No repos found</string>
+    <string name="fetching">Fetching..</string>
+    <string name="project_link">Project Link</string>
+    <string name="Description">Description</string>
+    <string name="name">Name</string>
+    <string name="contributors">Contributors</string>
+    <string name="repositories">Repositories</string>
+    <string name="click_here">Click here to open</string>
+    <string name="filters">Filters</string>
+    <string name="stars">Stars</string>
+    <string name="forks">Forks</string>
+    <string name="updated">Last updated</string>
+    <string name="apply">Apply</string>
+    <string name="sort_by">Sort By</string>
+    <string name="order_by">Order by</string>
+    <string name="ascending">Ascending</string>
+    <string name="descending">Descending</string>
+    <string name="clear">Clear</string>
+    <string name="repo_details">Repo Details</string>
+    <string name="contributor_details">Contributor Details</string>
+    <string name="no_contributors">No Contributors</string>
+</resources>
