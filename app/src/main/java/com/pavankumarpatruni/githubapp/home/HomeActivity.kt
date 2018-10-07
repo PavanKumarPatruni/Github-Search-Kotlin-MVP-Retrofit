@@ -39,7 +39,7 @@ class HomeActivity : AppCompatActivity(), HomeView, View.OnClickListener, RepoAd
         initRecyclerView()
         initBottomSheet()
 
-        editTextSearch.setText("krishcdbry")
+        editTextSearch.setText("android")
         imageViewSearch.performClick()
     }
 
